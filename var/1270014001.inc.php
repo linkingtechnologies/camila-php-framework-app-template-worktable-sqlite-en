@@ -18,7 +18,7 @@
 setlocale(LC_TIME, "it_IT.utf8");
 date_default_timezone_set('Europe/Rome');
 
-error_reporting(E_ERROR | E_PARSE);
+error_reporting(E_ALL & ~E_WARNING & ~E_DEPRECATED);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 0);
 
