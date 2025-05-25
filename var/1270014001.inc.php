@@ -55,10 +55,9 @@ define('CAMILA_APPLICATION_NAME', 'Worktable - Name');
 define('CAMILA_APPLICATION_TITLE', 'Worktable - Title');
 define('CAMILA_APPLICATION_GROUP', 'Worktable');
 
-define('CAMILA_APPLICATION_UI_KIT', 'bootstrap3');
+define('CAMILA_APPLICATION_UI_KIT', 'bulma');
 define('CAMILA_APPLICATION_UUID_ENABLED', true);
 
-/////8
 define('CAMILA_LOGIN_MLANG', false);
 
 define('CAMILA_UI_DEFAULT_BTN_SIZE', "btn-sm");
