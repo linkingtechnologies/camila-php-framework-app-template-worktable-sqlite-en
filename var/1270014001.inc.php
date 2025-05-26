@@ -45,9 +45,6 @@ if ($_ENV["DATABASE_URL"] != '') {
 }
 define('CAMILA_AUTH_PASSWORD_HASHING', true);
 
-//define('CAMILA_DB_DSN', "mysql://user:pass@host/dbname");
-//define('CAMILA_AUTH_DSN', "mysql://user:pass@host/dbname");
-
 define('CAMILA_APIKEYAUTH_KEYS' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
 define('CAMILA_CLI_REMOTE_KEY' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
 
@@ -65,7 +62,6 @@ define('CAMILA_UI_DEFAULT_BTN_SIZE', "btn-sm");
 define('CAMILA_LOG_DIR', CAMILA_VAR_ROOTDIR.'/log');
 define('CAMILA_TMP_DIR', CAMILA_VAR_ROOTDIR.'/tmp');
 define('CAMILA_VAR_DIR', CAMILA_VAR_ROOTDIR.'/kfkfkfkfkf/counters');
-//define('CAMILA_TABLES_DIR', CAMILA_VAR_ROOTDIR.'/tables');
 define('CAMILA_NEWS_DIR', CAMILA_VAR_ROOTDIR.'/news');
 define('CAMILA_TMPL_DIR', CAMILA_VAR_ROOTDIR.'/templates');
 define('CAMILA_WORKTABLES_DIR', CAMILA_VAR_ROOTDIR.'/worktables');
@@ -102,5 +98,4 @@ define('CAMILA_FM_EXPORT_SAVETO_DISABLED', true);
 define('CAMILA_SHOW_ERRORS', false);
 define('CAMILA_BAN_IP_SECS', 20);
 define('CAMILA_ADMINISTRATOR_EMAIL', 'mail@example.com');
-
 ?>
