@@ -43,7 +43,6 @@ if ($_ENV["DATABASE_URL"] != '') {
 	define('CAMILA_DB_DSN', "sqlite3://$dbpath");
 	define('CAMILA_AUTH_DSN', "sqlite3://$dbpath");
 }
-define('CAMILA_AUTH_PASSWORD_HASHING', true);
 
 define('CAMILA_APIKEYAUTH_KEYS' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
 define('CAMILA_CLI_REMOTE_KEY' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
@@ -54,6 +53,10 @@ define('CAMILA_APPLICATION_GROUP', 'Worktable');
 
 define('CAMILA_APPLICATION_UI_KIT', 'bulma');
 define('CAMILA_APPLICATION_UUID_ENABLED', true);
+
+define('CAMILA_WORKTABLE_SPECIAL_ICON_ENABLED', true);
+define('CAMILA_WORKTABLE_SELECTED_ICON_ENABLED', true);
+define('CAMILA_WORKTABLE_IMPORT_ENABLED', true);
 
 define('CAMILA_LOGIN_MLANG', false);
 
