@@ -51,16 +51,35 @@ define('CAMILA_DEFAULT_USER_LEVEL', 20);
 define('CAMILA_LINKSET_SEPARATOR', '>');
 define('CAMILA_DEFAULT_JS_SKIN', 2);
 
-define('CAMILA_DIR', '../../camila/');
-define('CAMILA_CSS_DIR', '../../camila/css/');
-define('CAMILA_IMG_DIR', '../../camila/images/');
-define('CAMILA_LIB_DIR', '../../lib/');
-define('CAMILA_VENDOR_DIR', '../../vendor/');
+if (is_dir('../../camila/')) {
+	define('CAMILA_DIR', '../../camila/');
+	define('CAMILA_CSS_DIR', '../../camila/css/');
+	define('CAMILA_IMG_DIR', '../../camila/images/');
+	define('CAMILA_LIB_DIR', '../../lib/');
+	define('CAMILA_VENDOR_DIR', '../../vendor/');
+}
+
+
+if (is_dir('lib/')) {
+	define('CAMILA_DIR', '');
+	define('CAMILA_CSS_DIR', '../../camila/css/');
+	define('CAMILA_IMG_DIR', '../../camila/images/');
+	define('CAMILA_LIB_DIR', './lib/');
+	define('CAMILA_VENDOR_DIR', './vendor/');
+}
+
+if (is_dir('../../../../camila/')) {
+	define('CAMILA_DIR', '../../../../camila/');
+	define('CAMILA_CSS_DIR', '../../../../camila/css/');
+	define('CAMILA_IMG_DIR', '../../../../camila/images/');
+	define('CAMILA_LIB_DIR', '../../../../lib/');
+	define('CAMILA_VENDOR_DIR', '../../../../vendor/');
+}
+
 define('CAMILA_TABLES_DIR', dirname(dirname(dirname(dirname(__FILE__)))).'/camila/tables/');
 define('CAMILA_LANG_DIR', 'lang/');
 define('CAMILA_FORM_DIR', 'form/');
 define('CAMILA_PROV_DIR', 'provider/');
-
 
 define('CAMILA_LANG', 'en');
 
