@@ -44,7 +44,6 @@ if ($_ENV["DATABASE_URL"] != '') {
 	define('CAMILA_AUTH_DSN', "sqlite3://$dbpath");
 }
 
-define('CAMILA_APIKEYAUTH_KEYS' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
 define('CAMILA_CLI_REMOTE_KEY' , 'TEMP_CHANGE_ME_XNQv0mSsPC344QWOaMzs4BGtFrsbHeRb');
 
 define('CAMILA_APPLICATION_NAME', 'Worktable - Name');
